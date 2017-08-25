@@ -38,11 +38,6 @@ public extension Unit {
     }
 }
 
-public struct Pound: Unit {
-    public let value: Double
-    public let singularUnitAbbreviation = "lb"
-}
-
 public struct Kilogram: Unit {
     public let value: Double
     public let singularUnitAbbreviation = "kg"
