@@ -37,8 +37,3 @@ public extension Unit {
         return valueString + suffix
     }
 }
-
-public struct Kilogram: Unit {
-    public let value: Double
-    public let singularUnitAbbreviation = "kg"
-}
