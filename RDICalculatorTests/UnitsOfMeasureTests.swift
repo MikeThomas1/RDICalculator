@@ -11,8 +11,8 @@ import XCTest
 import RDICalculator
 
 class UnitTests: XCTestCase {
+    // All test value verfied with google unit conversion tool
     func testLbToKgConversion() {
-        // Conversion values based on google's converison tool
         let pound1 = Pound(value: 1.0)
         let weight1 = Weight(pound1)
         
@@ -24,5 +24,19 @@ class UnitTests: XCTestCase {
         
         XCTAssertEqual(weight2.lbs.value, 100.0)
         XCTAssertEqual(weight2.kgs.value, 45.359237)
+    }
+    
+    func testKgToLbConversion() {
+        let kilogram1 = Kilogram(value: 1.0)
+        let weight1 = Weight(kilogram1)
+        
+        XCTAssertEqual(weight1.lbs.value, 2.2046226218487757)
+        XCTAssertEqual(weight1.kgs.value, 1.0)
+        
+        let kilogram2 = Kilogram(value: 100.0)
+        let weight2 = Weight(kilogram2)
+        
+        XCTAssertEqual(weight2.lbs.value, 220.46226218487757)
+        XCTAssertEqual(weight2.kgs.value, 100.0)
     }
 }
