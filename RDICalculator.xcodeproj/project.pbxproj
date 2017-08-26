@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		03854AC21F50E91C0035A14D /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854AC11F50E91C0035A14D /* Unit.swift */; };
-		03854AC41F50E99F0035A14D /* UnitConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854AC31F50E99F0035A14D /* UnitConvertible.swift */; };
-		03854AC81F50E9DB0035A14D /* UnitOfMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854AC71F50E9DB0035A14D /* UnitOfMeasure.swift */; };
 		03854ACA1F50EBC20035A14D /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854AC91F50EBC20035A14D /* Weight.swift */; };
 		03854ACC1F50EC150035A14D /* Pound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854ACB1F50EC150035A14D /* Pound.swift */; };
 		03854ACE1F50EC470035A14D /* Kilogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854ACD1F50EC470035A14D /* Kilogram.swift */; };
+		03854AD01F50ECE70035A14D /* UnitsOfMeasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854ACF1F50ECE70035A14D /* UnitsOfMeasureTests.swift */; };
 		03E7C3AC1F50D74000E3BC5E /* RDICalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E7C3A21F50D73F00E3BC5E /* RDICalculator.framework */; };
 		03E7C3B11F50D74000E3BC5E /* RDICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7C3B01F50D74000E3BC5E /* RDICalculatorTests.swift */; };
 		03E7C3B31F50D74000E3BC5E /* RDICalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E7C3A51F50D73F00E3BC5E /* RDICalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,11 +29,10 @@
 
 /* Begin PBXFileReference section */
 		03854AC11F50E91C0035A14D /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
-		03854AC31F50E99F0035A14D /* UnitConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConvertible.swift; sourceTree = "<group>"; };
-		03854AC71F50E9DB0035A14D /* UnitOfMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfMeasure.swift; sourceTree = "<group>"; };
 		03854AC91F50EBC20035A14D /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		03854ACB1F50EC150035A14D /* Pound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pound.swift; sourceTree = "<group>"; };
 		03854ACD1F50EC470035A14D /* Kilogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kilogram.swift; sourceTree = "<group>"; };
+		03854ACF1F50ECE70035A14D /* UnitsOfMeasureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsOfMeasureTests.swift; sourceTree = "<group>"; };
 		03E7C3A21F50D73F00E3BC5E /* RDICalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDICalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E7C3A51F50D73F00E3BC5E /* RDICalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDICalculator.h; sourceTree = "<group>"; };
 		03E7C3A61F50D73F00E3BC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,8 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				03854AC11F50E91C0035A14D /* Unit.swift */,
-				03854AC31F50E99F0035A14D /* UnitConvertible.swift */,
-				03854AC71F50E9DB0035A14D /* UnitOfMeasure.swift */,
 				03854AC91F50EBC20035A14D /* Weight.swift */,
 				03854ACB1F50EC150035A14D /* Pound.swift */,
 				03854ACD1F50EC470035A14D /* Kilogram.swift */,
@@ -106,8 +102,9 @@
 		03E7C3AF1F50D74000E3BC5E /* RDICalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				03E7C3B01F50D74000E3BC5E /* RDICalculatorTests.swift */,
 				03E7C3B21F50D74000E3BC5E /* Info.plist */,
+				03E7C3B01F50D74000E3BC5E /* RDICalculatorTests.swift */,
+				03854ACF1F50ECE70035A14D /* UnitsOfMeasureTests.swift */,
 			);
 			path = RDICalculatorTests;
 			sourceTree = "<group>";
@@ -223,8 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03854AC81F50E9DB0035A14D /* UnitOfMeasure.swift in Sources */,
-				03854AC41F50E99F0035A14D /* UnitConvertible.swift in Sources */,
 				03854AC21F50E91C0035A14D /* Unit.swift in Sources */,
 				03854ACE1F50EC470035A14D /* Kilogram.swift in Sources */,
 				03854ACC1F50EC150035A14D /* Pound.swift in Sources */,
@@ -237,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E7C3B11F50D74000E3BC5E /* RDICalculatorTests.swift in Sources */,
+				03854AD01F50ECE70035A14D /* UnitsOfMeasureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
