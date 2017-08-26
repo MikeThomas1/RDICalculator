@@ -39,4 +39,24 @@ class UnitTests: XCTestCase {
         XCTAssertEqual(weight2.lbs.value, 220.46226218487757)
         XCTAssertEqual(weight2.kgs.value, 100.0)
     }
+    
+    func testSingularLbDisplayValue() {
+        let pound = Pound(value: 1.0)
+        XCTAssertEqual(pound.displayValue, "1lb")
+    }
+    
+    func testPluralLbDisplayValue() {
+        let pound = Pound(value: 1.59999)
+        XCTAssertEqual(pound.displayValue, "1.6lbs")
+    }
+    
+    func testSingularKgDisplayValue() {
+        let pound = Kilogram(value: 1.0)
+        XCTAssertEqual(pound.displayValue, "1kg")
+    }
+    
+    func testPluralKgDisplayValue() {
+        let pound = Kilogram(value: 1.59999)
+        XCTAssertEqual(pound.displayValue, "1.6kgs")
+    }
 }
