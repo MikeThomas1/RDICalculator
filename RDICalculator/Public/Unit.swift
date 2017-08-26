@@ -14,6 +14,8 @@ public protocol Unit {
     var displayValue: String { get }
     var singularUnitAbbreviation: String { get }
     var pluralUnitAbbreviation: String { get }
+    
+    init(value: Double)
 }
 
 public extension Unit {

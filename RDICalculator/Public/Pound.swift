@@ -12,4 +12,8 @@ import Foundation
 public struct Pound: Unit {
     public let value: Double
     public let singularUnitAbbreviation = "lb"
+    
+    public init(value: Double) {
+        self.value = value
+    }
 }

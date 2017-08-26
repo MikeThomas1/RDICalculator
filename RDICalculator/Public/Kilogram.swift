@@ -12,4 +12,8 @@ import Foundation
 public struct Kilogram: Unit {
     public let value: Double
     public let singularUnitAbbreviation = "kg"
+    
+    public init(value: Double) {
+        self.value = value
+    }
 }
