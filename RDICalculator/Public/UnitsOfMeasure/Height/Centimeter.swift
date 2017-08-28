@@ -9,11 +9,41 @@
 import Foundation
 
 
-public struct Centimeter: Unit {
+public struct Centimeter: HeightUnit {
     public let value: Double
-    public let singularUnitAbbreviation = "cm"
+    public let symbol = "cm"
+    public let name = "centimeter"
     
     public init(value: Double) {
         self.value = value
     }
+    
+    public init(value: Int) {
+        let dbl = Double(value)
+        self.value = dbl
+    }
+    
+    public init(value: Float) {
+        let dbl = Double(value)
+        self.value = dbl
+    }
 }
+
+public extension Double {
+    var centimeter: Centimeter {
+        return Centimeter(value: self)
+    }
+}
+
+public extension Float {
+    var centimeter: Centimeter {
+        return Centimeter(value: self)
+    }
+}
+
+public extension Int {
+    var centimeter: Centimeter {
+        return Centimeter(value: self)
+    }
+}
+

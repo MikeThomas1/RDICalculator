@@ -10,27 +10,15 @@ import XCTest
 @testable import RDICalculator
 
 class RDICalculatorTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testSample() {
+        let height = Height(Inch(value: 70.0))
+        let weight = Weight(Pound(value: 170))
+        let rdi = RDICalculator.calculate(height: height, weight: weight, gender: .male, age: 26, activity: .moderatelyActive)
+        print("Carbs percentage: \(rdi.carbohydrate.percentage)")
+        print("Carbs weight: \(rdi.carbohydrate.weight.gram)")
+        print("Protein percentage: \(rdi.protein.percentage)")
+        print("Protein weight: \(rdi.protein.weight.gram)")
+        print("Fat percentage: \(rdi.fat.percentage)")
+        print("Fat weight: \(rdi.fat.weight.gram)")
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

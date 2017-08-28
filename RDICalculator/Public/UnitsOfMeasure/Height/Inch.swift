@@ -9,14 +9,41 @@
 import Foundation
 
 
-public struct Inch: Unit {
+public struct Inch: HeightUnit {
     public let value: Double
-    public let singularUnitAbbreviation = "inch"
-    public var pluralUnitAbbreviation: String {
-        return singularUnitAbbreviation + "es"
-    }
+    public let symbol = "in"
+    public let name = "inch"
     
     public init(value: Double) {
         self.value = value
     }
+    
+    public init(value: Int) {
+        let dbl = Double(value)
+        self.value = dbl
+    }
+    
+    public init(value: Float) {
+        let dbl = Double(value)
+        self.value = dbl
+    }
 }
+
+public extension Double {
+    var inch: Inch {
+        return Inch(value: self)
+    }
+}
+
+public extension Float {
+    var inch: Inch {
+        return Inch(value: self)
+    }
+}
+
+public extension Int {
+    var inch: Inch {
+        return Inch(value: self)
+    }
+}
+
