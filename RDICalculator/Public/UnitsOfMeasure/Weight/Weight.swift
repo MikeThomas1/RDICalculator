@@ -37,7 +37,7 @@ public struct Weight: UnitConverter {
     public let pound: Pound
     public let kilogram: Kilogram
     public var gram:  Gram {
-        let val = kilogram.value / 1000.0
+        let val = kilogram.value * 1000.0
         return Gram(value: val)
     }
 }
