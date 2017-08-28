@@ -9,21 +9,25 @@
 import Foundation
 
 
-public struct Height {
-    public init(_ inch: Inch) {
-        self.inch = inch
-        
-        let cmConvertedValue = inch.value * 2.54
-        self.cm = Centimeter(value: cmConvertedValue)
-    }
-    
-    public init(_ centimeter: Centimeter) {
-        self.cm = centimeter
-        
-        let inConvertedValue = centimeter.value / 2.54
-        self.inch = Inch(value: inConvertedValue)
+public struct Height: UnitConverter {
+    public init(_ unit: HeightUnit) {
+        switch unit {
+        case is Inch:
+            self.inch = unit as! Inch
+            
+            let cmConvertedValue = inch.value * 2.54
+            self.centimeter = Centimeter(value: cmConvertedValue)
+            break
+        case is Centimeter:
+            self.centimeter = unit as! Centimeter
+            
+            let inConvertedValue = centimeter.value / 2.54
+            self.inch = Inch(value: inConvertedValue)
+        default:
+            fatalError("Unsupported Unit")
+        }
     }
     
     public let inch: Inch
-    public let cm: Centimeter
+    public let centimeter: Centimeter
 }

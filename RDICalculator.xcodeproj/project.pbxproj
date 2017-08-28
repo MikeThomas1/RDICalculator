@@ -15,9 +15,14 @@
 		03854AD71F50F6EA0035A14D /* Centimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854AD61F50F6EA0035A14D /* Centimeter.swift */; };
 		03854AD91F50F7780035A14D /* Inch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854AD81F50F7780035A14D /* Inch.swift */; };
 		03854ADB1F50FB770035A14D /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854ADA1F50FB770035A14D /* Height.swift */; };
+		03854ADD1F5126A90035A14D /* RDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03854ADC1F5126A90035A14D /* RDI.swift */; };
 		03E7C3AC1F50D74000E3BC5E /* RDICalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E7C3A21F50D73F00E3BC5E /* RDICalculator.framework */; };
 		03E7C3B11F50D74000E3BC5E /* RDICalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7C3B01F50D74000E3BC5E /* RDICalculatorTests.swift */; };
 		03E7C3B31F50D74000E3BC5E /* RDICalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E7C3A51F50D73F00E3BC5E /* RDICalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03F9F7E41F545DD50037B45C /* Gram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9F7E31F545DD50037B45C /* Gram.swift */; };
+		03F9F7E61F5460760037B45C /* HeightUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9F7E51F5460760037B45C /* HeightUnit.swift */; };
+		03F9F7E81F5460910037B45C /* WeightUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9F7E71F5460910037B45C /* WeightUnit.swift */; };
+		03F9F7EA1F5462DE0037B45C /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9F7E91F5462DE0037B45C /* UnitConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +44,17 @@
 		03854AD61F50F6EA0035A14D /* Centimeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centimeter.swift; sourceTree = "<group>"; };
 		03854AD81F50F7780035A14D /* Inch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inch.swift; sourceTree = "<group>"; };
 		03854ADA1F50FB770035A14D /* Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
+		03854ADC1F5126A90035A14D /* RDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDI.swift; sourceTree = "<group>"; };
 		03E7C3A21F50D73F00E3BC5E /* RDICalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDICalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E7C3A51F50D73F00E3BC5E /* RDICalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDICalculator.h; sourceTree = "<group>"; };
 		03E7C3A61F50D73F00E3BC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E7C3AB1F50D74000E3BC5E /* RDICalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDICalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E7C3B01F50D74000E3BC5E /* RDICalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDICalculatorTests.swift; sourceTree = "<group>"; };
 		03E7C3B21F50D74000E3BC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F9F7E31F545DD50037B45C /* Gram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gram.swift; sourceTree = "<group>"; };
+		03F9F7E51F5460760037B45C /* HeightUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightUnit.swift; sourceTree = "<group>"; };
+		03F9F7E71F5460910037B45C /* WeightUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightUnit.swift; sourceTree = "<group>"; };
+		03F9F7E91F5462DE0037B45C /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				03854AD11F50F68E0035A14D /* UnitsOfMeasure */,
+				03854ADC1F5126A90035A14D /* RDI.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 			children = (
 				03854AD31F50F6B80035A14D /* Height */,
 				03854AC11F50E91C0035A14D /* Unit.swift */,
+				03F9F7E91F5462DE0037B45C /* UnitConverter.swift */,
 				03854AD21F50F6AA0035A14D /* Weight */,
 			);
 			path = UnitsOfMeasure;
@@ -87,9 +99,11 @@
 		03854AD21F50F6AA0035A14D /* Weight */ = {
 			isa = PBXGroup;
 			children = (
+				03F9F7E31F545DD50037B45C /* Gram.swift */,
 				03854ACD1F50EC470035A14D /* Kilogram.swift */,
 				03854ACB1F50EC150035A14D /* Pound.swift */,
 				03854AC91F50EBC20035A14D /* Weight.swift */,
+				03F9F7E71F5460910037B45C /* WeightUnit.swift */,
 			);
 			path = Weight;
 			sourceTree = "<group>";
@@ -99,6 +113,7 @@
 			children = (
 				03854AD61F50F6EA0035A14D /* Centimeter.swift */,
 				03854ADA1F50FB770035A14D /* Height.swift */,
+				03F9F7E51F5460760037B45C /* HeightUnit.swift */,
 				03854AD81F50F7780035A14D /* Inch.swift */,
 			);
 			path = Height;
@@ -254,10 +269,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				03854AC21F50E91C0035A14D /* Unit.swift in Sources */,
+				03F9F7E81F5460910037B45C /* WeightUnit.swift in Sources */,
 				03854AD71F50F6EA0035A14D /* Centimeter.swift in Sources */,
+				03F9F7E61F5460760037B45C /* HeightUnit.swift in Sources */,
 				03854ADB1F50FB770035A14D /* Height.swift in Sources */,
+				03854ADD1F5126A90035A14D /* RDI.swift in Sources */,
+				03F9F7EA1F5462DE0037B45C /* UnitConverter.swift in Sources */,
 				03854AD91F50F7780035A14D /* Inch.swift in Sources */,
 				03854ACE1F50EC470035A14D /* Kilogram.swift in Sources */,
+				03F9F7E41F545DD50037B45C /* Gram.swift in Sources */,
 				03854ACC1F50EC150035A14D /* Pound.swift in Sources */,
 				03854ACA1F50EBC20035A14D /* Weight.swift in Sources */,
 			);

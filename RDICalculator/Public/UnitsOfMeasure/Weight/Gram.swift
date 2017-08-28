@@ -1,18 +1,18 @@
 //
-//  Pound.swift
+//  Gram.swift
 //  RDICalculator
 //
-//  Created by Michael Thomas on 8/25/17.
+//  Created by Michael Thomas on 8/28/17.
 //  Copyright © 2017 Vault-Tec. All rights reserved.
 //
 
 import Foundation
 
 
-public struct Pound: WeightUnit {
+public struct Gram: WeightUnit {
     public let value: Double
-    public let symbol = "lb"
-    public let name = "pound"
+    public let symbol = "g"
+    public let name = "gram"
     
     public init(value: Double) {
         self.value = value
@@ -30,19 +30,20 @@ public struct Pound: WeightUnit {
 }
 
 public extension Double {
-    var pound: Pound {
-        return Pound(value: self)
+    var gram: Gram {
+        return Gram(value: self)
     }
 }
 
 public extension Float {
-    var pound: Pound {
-        return Pound(value: self)
+    var gram: Gram {
+        return Gram(value: self)
     }
 }
 
 public extension Int {
-    var pound: Pound {
-        return Pound(value: self)
+    var gram: Gram {
+        return Gram(value: self)
     }
 }
+
