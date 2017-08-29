@@ -6,6 +6,8 @@ Pod::Spec.new do |s|
   s.name = "RDICalculator"
   s.summary = "RDICalculator Calculates RDI (Recommended Daily Intake)"
 
+  s.version = "0.1.0"
+
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "Michael Thomas" => "mike_thomas1@me.com" }
   s.homepage = "https://github.com/MikeThomas1/RDICalculator"
@@ -13,8 +15,5 @@ Pod::Spec.new do |s|
 
   s.framework = "UIKit"
   s.source_files = "RDICalculator/**/*.{swift}"
-  s.resources = "RDICalculator/**/*.{png,jpeg,jpg,storyboard,xib}"
-
-  s.version = "0.1.0"
 
 end
