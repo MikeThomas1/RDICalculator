@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "Michael Thomas" => "mike_thomas1@me.com" }
   s.homepage = "https://github.com/MikeThomas1/RDICalculator"
-  s.source = { :git => "git@github.com:MikeThomas1/RDICalculator.git", :tag => "#{s.version}"}
+  s.source = { :git => "https://github.com/MikeThomas1/RDICalculator.git", :tag => "#{s.version}"}
 
   s.framework = "UIKit"
   s.source_files = "RDICalculator/**/*.{swift}"
