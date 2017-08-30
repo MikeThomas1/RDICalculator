@@ -58,7 +58,7 @@ $ pod install
 
 ## Usage
 
-### Calulating RDI
+### Calculating RDI
 
 ```swift
 // TODO:
