@@ -44,7 +44,22 @@ public class RDICalculator {
     }
     
     public static func calculate(height: Height, weight: Weight, gender: Gender, age: Int, activity: ActivityLevel) -> RDI {
-        let calories = gender.calories(kilogram: weight.kilogram, centimeter: height.centimeter, age: Double(age), activity: activity)
-        return RDI(totalCalories: calories)
+        let totalCalories = gender.calories(kilogram: weight.kilogram, centimeter: height.centimeter, age: Double(age), activity: activity)
+        let carbs: Carbohydrate = makeUnit(from: totalCalories)
+        let protein: Protein = makeUnit(from: totalCalories)
+        let fat: Fat = makeUnit(from: totalCalories)
+        return RDI(totalCalories: totalCalories, carbohydrate: carbs, protein: protein, fat: fat)
+    }
+}
+
+private extension RDICalculator {
+    static func makeUnit<T: RDIUnit>(of rdiUnitType: T, from totalCalories: Double) -> T {
+        let unit: T = makeUnit(from: totalCalories)
+        return unit
+    }
+    
+    static func makeUnit<T: RDIUnit>(from totalCalories: Double) -> T {
+        let calories = totalCalories * T.percentage
+        return T(calories: calories)
     }
 }

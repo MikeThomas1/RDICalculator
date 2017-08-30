@@ -9,21 +9,11 @@
 import Foundation
 
 
-public class RDI {
+public struct RDI {
+    // TODO: make a unit of measure
+    public let totalCalories: Double
     public let carbohydrate: Carbohydrate
     public let protein: Protein
     public let fat: Fat
-    
-    public convenience init(totalCalories: Double) {
-        let carb = Carbohydrate(totalCalories: totalCalories)
-        let protein = Protein(totalCalories: totalCalories)
-        let fat = Fat(totalCalories: totalCalories)
-        self.init(carbohydrate: carb, protein: protein, fat: fat)
-    }
-    
-    public required init(carbohydrate: Carbohydrate, protein: Protein, fat: Fat) {
-        self.carbohydrate = carbohydrate
-        self.protein = protein
-        self.fat = fat
-    }
 }
+

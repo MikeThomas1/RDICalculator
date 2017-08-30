@@ -99,7 +99,6 @@
 			children = (
 				03A27C1A1F56F04500300BA9 /* Calculator */,
 				03854AD31F50F6B80035A14D /* Height */,
-				03A27C1D1F56F08400300BA9 /* Helpers */,
 				03854AC11F50E91C0035A14D /* Unit.swift */,
 				03F9F7E91F5462DE0037B45C /* UnitConverter.swift */,
 				03854AD21F50F6AA0035A14D /* Weight */,
@@ -137,13 +136,6 @@
 				03A27C1B1F56F06D00300BA9 /* RDICalculator.swift */,
 			);
 			path = Calculator;
-			sourceTree = "<group>";
-		};
-		03A27C1D1F56F08400300BA9 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		03A27C201F56F17000300BA9 /* Models */ = {

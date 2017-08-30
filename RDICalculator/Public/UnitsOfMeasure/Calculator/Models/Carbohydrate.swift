@@ -10,11 +10,16 @@ import Foundation
 
 
 public struct Carbohydrate: RDIUnit {
-    public let totalCalories: Double
+    public static let percentage = 55.0
     
-    public let percentage = 55.0
+    public let calories: Double
+    
     public var weight: Weight {
         let gs = calories * 0.25
         return Weight(Gram(value: gs))
+    }
+    
+    public init(calories: Double) {
+        self.calories = calories
     }
 }
