@@ -70,7 +70,7 @@ RDICalculator was created and is maintained my [Mike Thomas](https://twitter.com
 
 ## Donations
 
-If you are feeling generous 😅 my Venmo is `@Mike-Thomas---`. All donations go to support my expensive hobbies; racing, and snowboarding.
+If you are feeling generous 😅 my Venmo is [`@Mike-Thomas---`](https://venmo.com/Mike-Thomas---). All donations go to support my expensive hobbies; racing, and snowboarding.
 
 ## License
 
