@@ -18,7 +18,7 @@ RDICalculator is a tool for calculating recommended daily intake based on gender
 
 ## Requirements
 
-- iOS 8.0+
+- iOS 11.0+
 - Xcode 9.0
 - Swift 4.0
 
