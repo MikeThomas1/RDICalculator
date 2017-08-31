@@ -66,7 +66,7 @@ $ pod install
 
 ## Credits
 
-RDICalculator was created and is maintained my [Mike Thomas](https://twitter.com/soxfanmiket).
+RDICalculator was created and is maintained by [Mike Thomas](https://twitter.com/soxfanmiket).
 
 ## Donations
 
