@@ -8,11 +8,27 @@
 
 import Foundation
 
+
+/**
+ This class handles calculating RDI (Recommended Daily Intake).
+ */
 public class RDICalculator {
+    
+    /**
+     Gender, used to calculate RDI. Represents gender at birth.
+     */
     public enum Gender {
-        case male, female
+        /**
+         The male gender. XY chromosomes.
+         */
+        case male
         
-        func calories(kilogram: Kilogram, centimeter: Centimeter, age: Double, activity: ActivityLevel) -> Double {
+        /**
+         The female gender. XX chromosomes
+         */
+        case female
+        
+        internal func calories(kilogram: Kilogram, centimeter: Centimeter, age: Double, activity: ActivityLevel) -> Double {
             switch self {
             case .male:
                 let cals   = (((66 + (13.7 * kilogram.value))) + (5 * centimeter.value)) - (6.8 * age)
@@ -24,10 +40,36 @@ public class RDICalculator {
         }
     }
     
+    /**
+     The activity level of the person of which to calculate RDI for.
+     */
     public enum ActivityLevel {
-        case sedentary, lightlyActive, moderatelyActive, veryActive, extremelyActive
+        /**
+         Little or no exercise, desk job
+         */
+        case sedentary
         
-        var calRewardRate: Double {
+        /**
+         Light exercise/sports 1-3 days/wk
+         */
+        case lightlyActive
+        
+        /**
+         Moderate exercise/sports 3-5 days/wk
+         */
+        case moderatelyActive
+        
+        /**
+         Hard exercise/sports 6-7 days/wk
+         */
+        case veryActive
+        
+        /**
+         Hard daily exercise/sports & physical job
+         */
+        case extremelyActive
+        
+        internal var calRewardRate: Double {
             switch self {
             case .sedentary:
                 return 1.2
@@ -43,6 +85,23 @@ public class RDICalculator {
         }
     }
     
+    /**
+     Calculates RDI (Recommended Daily Intake).
+     
+     RDI (Recommended Daily Intake) calculated based on height, weight, gender, age, and activity.
+     
+     - parameter height: The height of the person which to calculate RDI for. SeeAlso
+     
+     - parameter weight: The weight of the person which to calculate RDI for. SeeAlso
+     
+     - parameter gender: The gender of the person which to calculate RDI for. SeeAlso
+     
+     - parameter age: The age of the person which to calculate RDI for.
+     
+     - parameter activity: The activity level of the person which to calculate RDI for.
+     
+     - returns: A RDI object containing calculated RDI.
+     */
     public static func calculate(height: Height, weight: Weight, gender: Gender, age: Int, activity: ActivityLevel) -> RDI {
         let totalCalories = gender.calories(kilogram: weight.kilogram, centimeter: height.centimeter, age: Double(age), activity: activity)
         let carbs: Carbohydrate = makeUnit(from: totalCalories)

@@ -23,3 +23,5 @@ public struct Carbohydrate: RDIUnit {
         self.calories = calories
     }
 }
+
+// TODO: create Float, Double, Int extensions and document

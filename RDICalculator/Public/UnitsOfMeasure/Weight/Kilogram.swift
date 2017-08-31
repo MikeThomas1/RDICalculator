@@ -29,6 +29,7 @@ public struct Kilogram: WeightUnit {
     }
 }
 
+// TODO: document these
 public extension Double {
     var kilogram: Kilogram {
         return Kilogram(value: self)

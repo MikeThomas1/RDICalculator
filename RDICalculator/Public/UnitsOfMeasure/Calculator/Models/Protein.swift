@@ -24,3 +24,5 @@ public struct Protein: RDIUnit {
     }
 }
 
+
+// TODO: create Float, Double, Int extensions and document

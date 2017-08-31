@@ -11,6 +11,8 @@ import Foundation
 
 public protocol WeightUnit: Unit {}
 
+
+// TODO: document this
 public extension WeightUnit {
     var to: Weight {
         return Weight(self)

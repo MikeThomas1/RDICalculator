@@ -9,6 +9,7 @@
 import Foundation
 
 
+// TODO: document this
 // TODO: rename. naming implies that it conform to `Unit` or make this conform to `Unit`?
 public protocol RDIUnit {
     // TODO: Should percentage be considered a unit?

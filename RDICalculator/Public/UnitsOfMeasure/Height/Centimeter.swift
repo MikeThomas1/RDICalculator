@@ -29,6 +29,7 @@ public struct Centimeter: HeightUnit {
     }
 }
 
+// TODO: document these
 public extension Double {
     var centimeter: Centimeter {
         return Centimeter(value: self)
