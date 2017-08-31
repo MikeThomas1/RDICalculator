@@ -12,7 +12,7 @@ public class RDICalculator {
     public enum Gender {
         case male, female
         
-        public func calories(kilogram: Kilogram, centimeter: Centimeter, age: Double, activity: ActivityLevel) -> Double {
+        func calories(kilogram: Kilogram, centimeter: Centimeter, age: Double, activity: ActivityLevel) -> Double {
             switch self {
             case .male:
                 let cals   = (((66 + (13.7 * kilogram.value))) + (5 * centimeter.value)) - (6.8 * age)
@@ -27,7 +27,7 @@ public class RDICalculator {
     public enum ActivityLevel {
         case sedentary, lightlyActive, moderatelyActive, veryActive, extremelyActive
         
-        public var calRewardRate: Double {
+        var calRewardRate: Double {
             switch self {
             case .sedentary:
                 return 1.2
