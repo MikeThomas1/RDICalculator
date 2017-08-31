@@ -29,6 +29,7 @@ public struct Inch: HeightUnit {
     }
 }
 
+// TODO: document these
 public extension Double {
     var inch: Inch {
         return Inch(value: self)

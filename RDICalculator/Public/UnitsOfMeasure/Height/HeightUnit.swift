@@ -12,6 +12,7 @@ import Foundation
 public protocol HeightUnit: Unit {}
 
 
+// TODO: document me
 public extension HeightUnit {
     var to: Height {
         return Height(self)

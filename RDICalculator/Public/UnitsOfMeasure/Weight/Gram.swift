@@ -29,6 +29,7 @@ public struct Gram: WeightUnit {
     }
 }
 
+// TODO: document these
 public extension Double {
     var gram: Gram {
         return Gram(value: self)
